@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background-color: black;
+
+}
+.main{
+   background-image: url("TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-repeat: no-repeat; /*!Resim Tekrar Etmesin*/
+  background-position: center center; /*! Hem x hemde y eksenininden ortala */
+  background-size: max(1200px, 100vw);
+  height: 644px;
+  position: relative;
+}
+.main .box{
+ /* border: 1px solid red;  */
+height: 644px;
+position: absolute;
+top: 0;
+width: 100%;
+ background-color: black; 
+opacity: 0.68; 
+
+}
+nav{
+    
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+
+}
+nav img{
+    width: 130px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    /* border: 1px solid red; */
+    height: calc(100% - 100px);
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    gap: 23px;
+}
+/*! BİRDEN FAZLA AYNI ETİKETE DEĞİŞİKLİK YAPMAK (span) */
+.hero>:nth-child(1){
+    /* border: 1px solid red; */
+    font-size: 48px;
+    font-weight: bolder;
+    /* text-align: center; */
+}
+.hero >:nth-child(2){
+    /* border: 1px solid red; */
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero >:nth-child(3){
+    /* border: 1px solid red; */
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+}
+/*! BİRDEN FAZLA AYNI ETİKETE DEĞİŞİKLİK YAPMAK (span) */
+
+.seperation{
+    background-color:rgb(46, 44, 44) ;
+    height: 7px;
+    position: relative;
+    z-index: 20;
+
+}
+.btn{
+    background-color:rgb(248, 243,243,0.021);
+    color: white;
+    border: 0.5px solid white;
+    font-weight: 400;
+    padding: 3px 8px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.btn.btn-red{
+    background-color:#E50914;
+    padding: 3px 24px;
+    font-size: 20px;
+}
+.btn-red-sm{
+   background-color: #F30F20;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+    color: white;
+    padding: 7px 101px 8px 14px;
+    background-color:rgb(23,23,23,0.7);
+    border: 1px solid rgb(248,243,243,0.5);
+    outline: none;
+}
+.first{
+    display: flex;
+    max-width: 70vw;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin:auto;
+}
+/*? Section etiketi .first,secImg */
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    right: 0;
+    top: 51px;
+    width: 555px;
+}
+section.first > div{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0 ;
+
+}
+section.first > div :nth-child(1){
+    font-size: 48px;
+}
+section.first > div :nth-child(2){
+font-size: 24px;
+}
+/*? Section etiketi .first,secImg */
+
+section.first > :nth-child(1){
+    font-size: 48px;
+}
+section.first > :nth-child(2){
+    font-size:  24px; 
+    
+  
+}
+
+.fqa{
+    color: white;
+    /* margin-bottom: 200px;  */
+    padding: 34px;
+}
+.fqa h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color:#414141 ;
+    font-size: 24px;
+    padding: 24px;
+    max-width: 64vw;
+    margin: 34px auto;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.faqbox:hover{
+    background-color:#3e3e3e ;
+}
+
+footer{
+    color: white;
+}
+
+footer{
+    max-width: 60vw;
+    color: white;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions{
+    padding: 34px 0;
+}
+
+.footer{
+    display:grid ;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.footer-item a{
+    color: white;
+    
+    
+}
+.footer a{
+    font-size: 14px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 1300px){
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+    }.secImg img{
+        width: 305px;
+    }
+    .secImg video{
+
+        width: 305px;
+    }
+    .hero > :nth-child(1){
+        font-size: 30px;
+    }
+    .hero > :nth-child(2){
+        font-size: 18px;
+    }
+    .hero > :nth-child(3){
+        font-size: 18px;
+    }
+    .hero-buttons{
+       flex-direction: column;
+    }
+    .section.first > div :nth-child(1){
+        font-size: 30px;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    .faqbox{
+        font-size:18px;
+    }
+    .fqa h2{
+        font-size: 32px;
+    }
+}
